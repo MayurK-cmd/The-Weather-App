@@ -25,7 +25,7 @@ export default function Home() {
         setError('Weather data not available. Please try again.');
         setWeather(null); 
       }
-    } catch (error) {
+    } catch (fetchError) {
       setError('Failed to fetch weather data.');
       setWeather(null); 
     }
