@@ -1,21 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #121212; 
+  color: #fff; 
+  font-family: 'Lexend Deca', sans-serif; 
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+h2 {
+  font-family: 'Alumni Sans Pinstripe', sans-serif; 
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #aaa; 
+}
+
+/* Style input and button */
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  width: 250px;
+  margin-right: 10px;
+  font-size: 1rem;
+  font-family: 'Lexend Deca', sans-serif; 
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #bbb;
+}
+
+input[type="text"]:hover {
+  border-color: #888; 
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #444;
+  border: 1px solid #555;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-family: 'Lexend Deca', sans-serif; 
+}
+
+button:hover {
+  background-color: rgb(66, 65, 65);
+}
+
+button:active {
+  background-color: #666;
+}
+
+
+p.error {
+  color: red;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+
+.weather-card {
+  background-color: #222;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); 
+
+.weather-card h2 {
+  font-family: 'Montserrat', sans-serif; 
+  color: #f4f4f4;
+}
+
+.weather-card p {
+  font-size: 1.5rem;
+  color: #ddd;
+}
+
 }
